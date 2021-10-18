@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
 //    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.8.1'
+    testImplementation 'org.testng:testng:7.1.0'
 
     compileOnly 'org.projectlombok:lombok:1.18.22'
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
@@ -20,5 +21,6 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+//    useJUnitPlatform()
+    useTestNG()
 }
